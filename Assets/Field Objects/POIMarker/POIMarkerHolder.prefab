@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 850728864051555872}
   - component: {fileID: -7995569437267369447}
+  - component: {fileID: 2927589574489576417}
   m_Layer: 0
   m_Name: POIMarkerHolder
   m_TagString: Untagged
@@ -44,6 +45,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522ff0ba1497bf643b257df9bb1b85a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2927589574489576417
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105374302055762279}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30, y: 100, z: 30}
+  m_Center: {x: -15, y: 125, z: 0}
 --- !u!1001 &5471660558127041657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -110,6 +124,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: POIMarker (Bottom)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2246638562087626567, guid: f5dd08e705b797a47b77cb74419782a2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870407313011639283, guid: f5dd08e705b797a47b77cb74419782a2,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870407313011639283, guid: f5dd08e705b797a47b77cb74419782a2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5dd08e705b797a47b77cb74419782a2, type: 3}
