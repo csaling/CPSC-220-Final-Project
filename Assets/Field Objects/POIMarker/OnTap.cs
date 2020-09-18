@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class OnTap : MonoBehaviour
 {
-    private bool isLeftButtonDown = Input.GetMouseButton(0);
-    void Start()
-    {
-        
-    }
     
-    void Update()
+    //unity coordinates to latitude longitude mapbox
+    public void OnMouseDown()
     {
-        if (isLeftButtonDown)
-        {
-            Debug.Log("True or False?:" + isLeftButtonDown);
-        }
+        Debug.Log("Latitude/Longitude:" + Lat + ", " + Long);
+        //public static Vector2 LatitudeLongitudeToUnityTilePosition(Vector2d coordinate, int tileZoom, float tileScale, ulong layerExtent = 4096UL)
     }
 }
