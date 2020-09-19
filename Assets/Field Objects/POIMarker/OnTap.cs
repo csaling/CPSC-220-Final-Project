@@ -11,8 +11,8 @@ public class OnTap : MonoBehaviour
     public void OnMouseDown()
     {
         var latLng = GameObject.Find("Map").GetComponent<AbstractMap>().WorldToGeoPosition(transform.position);
-        Debug.Log(transform.position);
-        Debug.Log("Latitude/Longitude: " + latLng);
+        //Debug.Log(transform.position);
+        //Debug.Log("Latitude/Longitude: " + latLng);
         
     }
 }
