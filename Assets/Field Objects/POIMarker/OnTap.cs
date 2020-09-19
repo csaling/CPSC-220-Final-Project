@@ -7,11 +7,10 @@ using UnityEngine;
 
 public class OnTap : MonoBehaviour
 {
-    [SerializeField] AbstractMap _map;
     
     public void OnMouseDown()
     {
-        var latLng = _map.WorldToGeoPosition(transform.position);
+        var latLng = GameObject.Find("Map").GetComponent<AbstractMap>().WorldToGeoPosition(transform.position);
         Debug.Log(transform.position);
         Debug.Log("Latitude/Longitude: " + latLng);
         
