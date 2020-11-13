@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainWorldScene.unity
+    guid: 42f6aa7ce7a604f16ade319663f46ceb
+  - enabled: 1
+    path: Assets/Scenes/FoodMinigame.unity
+    guid: fed35c42e4684d8458f03f706762dd25
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 98cc485d1d423c94da74796394cf1734
   m_configObjects: {}

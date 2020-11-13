@@ -12,4 +12,6 @@ public class PlayerData : Singleton<PlayerData>
         get => points;
         set => points = value;
     }
+    
+    //Save and Load here
 }

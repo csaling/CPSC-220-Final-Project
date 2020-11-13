@@ -29,8 +29,7 @@ public class FoodManager : MonoBehaviour
     public void OnMouseDown()
     {
         PlayerData.Instance.Points++;
-        Debug.Log(PlayerData.Instance.Points);
-        text.GetComponent<Text>().text = "Credits: " + data.Points;
+        text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
         Destroy(gameObject);
     }
 
