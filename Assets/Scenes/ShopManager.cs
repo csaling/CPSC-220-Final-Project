@@ -19,6 +19,7 @@ public class ShopManager : MonoBehaviour
     public GameObject player;
     private GameObject text;
     PlayerData data = new PlayerData();
+    public MeshRenderer[] playerColor;
 
     private void Start()
     {
@@ -29,7 +30,7 @@ public class ShopManager : MonoBehaviour
     {
         if (PlayerData.Instance.Points >= 10)
         {
-            player.GetComponent<Renderer>().material.color = Color.red;
+            PlayerData.Instance.ColorVal = 1;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 10;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
         }
@@ -39,7 +40,7 @@ public class ShopManager : MonoBehaviour
     {
         if (PlayerData.Instance.Points >= 10)
         {
-            player.GetComponent<Renderer>().material.color = Color.blue;
+            PlayerData.Instance.ColorVal = 2;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 10;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
         }
@@ -49,7 +50,7 @@ public class ShopManager : MonoBehaviour
     {
         if (PlayerData.Instance.Points >= 10)
         {
-            player.GetComponent<Renderer>().material.color = Color.green;
+            PlayerData.Instance.ColorVal = 3;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 10;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
         }
@@ -59,7 +60,7 @@ public class ShopManager : MonoBehaviour
     {
         if (PlayerData.Instance.Points >= 10)
         {
-            player.GetComponent<Renderer>().material.color = Color.cyan;
+            PlayerData.Instance.ColorVal = 4;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 10;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
         }
@@ -69,7 +70,7 @@ public class ShopManager : MonoBehaviour
     {
         if (PlayerData.Instance.Points >= 10)
         {
-            player.GetComponent<Renderer>().material.color = Color.black;
+            PlayerData.Instance.ColorVal = 5;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 10;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
         }
@@ -79,7 +80,7 @@ public class ShopManager : MonoBehaviour
     {
         if (PlayerData.Instance.Points >= 50)
         {
-            transform.GetChild(2).gameObject.SetActive(true);
+            PlayerData.Instance.Hat = true;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 50;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
         }
@@ -89,7 +90,7 @@ public class ShopManager : MonoBehaviour
     {
         if (PlayerData.Instance.Points >= 100)
         {
-            transform.GetChild(3).gameObject.SetActive(true);
+            PlayerData.Instance.Shield = true;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 100;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
         }
