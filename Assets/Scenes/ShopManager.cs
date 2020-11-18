@@ -33,6 +33,7 @@ public class ShopManager : MonoBehaviour
             PlayerData.Instance.ColorVal = 1;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 10;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
+            PlayerData.Instance.Save();
         }
     }
     
@@ -43,6 +44,7 @@ public class ShopManager : MonoBehaviour
             PlayerData.Instance.ColorVal = 2;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 10;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
+            PlayerData.Instance.Save();
         }
     }
     
@@ -53,6 +55,7 @@ public class ShopManager : MonoBehaviour
             PlayerData.Instance.ColorVal = 3;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 10;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
+            PlayerData.Instance.Save();
         }
     }
     
@@ -63,6 +66,7 @@ public class ShopManager : MonoBehaviour
             PlayerData.Instance.ColorVal = 4;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 10;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
+            PlayerData.Instance.Save();
         }
     }
     
@@ -73,6 +77,7 @@ public class ShopManager : MonoBehaviour
             PlayerData.Instance.ColorVal = 5;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 10;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
+            PlayerData.Instance.Save();
         }
     }
 
@@ -83,6 +88,7 @@ public class ShopManager : MonoBehaviour
             PlayerData.Instance.Hat = true;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 50;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
+            PlayerData.Instance.Save();
         }
     }
     
@@ -93,6 +99,7 @@ public class ShopManager : MonoBehaviour
             PlayerData.Instance.Shield = true;
             PlayerData.Instance.Points = PlayerData.Instance.Points - 100;
             text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
+            PlayerData.Instance.Save();
         }
     }
 }
