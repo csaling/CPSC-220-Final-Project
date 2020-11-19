@@ -19,6 +19,7 @@ public class FoodManager : MonoBehaviour
     {
         originalLatLng = transform.position;
         text = GameObject.FindGameObjectWithTag("Points");
+        text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
     }
 
     public void Update()

@@ -24,6 +24,7 @@ public class ShopManager : MonoBehaviour
     private void Start()
     {
         text = GameObject.FindGameObjectWithTag("Points");
+        text.GetComponent<Text>().text = "Credits: " + PlayerData.Instance.Points;
     }
 
     public void RedColor()

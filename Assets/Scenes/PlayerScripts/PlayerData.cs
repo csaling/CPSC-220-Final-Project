@@ -54,7 +54,6 @@ public class PlayerData : Singleton<PlayerData>
     public void Load()
     {
         path = Application.persistentDataPath + "/player.dat";
-        Debug.Log(path);
         String info;
         if (File.Exists(path))
         {
