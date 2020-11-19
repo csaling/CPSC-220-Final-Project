@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shield
   - Points
+  - Path
   layers:
   - Default
   - TransparentFX
